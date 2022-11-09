@@ -1,0 +1,339 @@
+	*
+	{	
+		font-family: Verdana, sans-serif;
+	}
+
+	body
+	{
+		display: flex;
+		flex-direction: column;
+		background-color: #333;
+		color: #FFFFFF;
+	}
+	#logo
+	{
+	height: 100px;
+	width: 100px;
+	}
+	.header
+	{
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		column-gap: 20px;
+	}
+	.headersection
+	{
+		display: flex;
+		gap: 15px;
+	}
+	h1 
+	{
+		font-style: bold;
+		font-size: 40px;
+	}
+	h2 
+	{
+		margin: 5px;
+	}
+	.navigationlist
+	{
+		display: flex;
+		background-color: #AAA;
+		width: 99%;
+		padding: 0;
+		text-decoration: none;
+		list-style: none;
+	}	
+	.navigationlist a 
+	{ 
+		font-size: 20px;
+		font-weight: bold;
+		color: #FFFFFF;
+		padding: 12px;
+		float: left;
+		margin-right: 3px;
+	}
+	.navigationlist a:hover { 
+		background-color: #BBB;
+	}
+	#active 
+	{ 
+		background-color: #CCC;
+		transition: .5s;
+	}
+	#hamburgericon
+	{
+		display: none;
+	}
+	.paragraph
+	{
+		width: 85%;
+		margin: 5px;
+		font-style: italic;
+		float: left;
+	}
+	.paragraphfooter
+	{
+		clear: left;
+	}
+	.articleheader
+	{
+		font-weight: bold;
+		margin: 5px;
+	}
+	.first-section
+	{
+		display: flex;
+		flex-direction: column;
+		margin: 0px;
+	}
+	.container
+	{
+		width: 120px;
+		height: 80px;
+		border: 1px solid;
+		margin: 0 auto;
+		color: #FFF;
+		opacity: 50%;
+		background-color: #FA0;
+		font-size: 20px;
+		position: fixed;
+		right: 2%;
+		bottom: 10%;
+		line-height: 1.3;
+	}
+	.footer
+	{
+		float: left;
+		width: 97%;
+		border-style: dashed;
+		border-radius: 2%;
+		border-color:#FA0;
+		padding: 7px;
+	}
+
+@media screen and (min-width: 930px)
+{
+	#video
+	{
+		width: 350px;
+		height: 270px;
+		margin: 5px;
+	}
+
+	#var
+	{
+		height: 200px;
+		width: 240px;
+		float: right;
+		margin: 5px;
+
+	}
+	#camera
+	{
+		height: 200px;
+		width: 240px;
+		float: right;
+		margin: 5px;
+	}
+	#vr
+	{
+		height: 200px;
+		width: 240px;
+		float: right;
+		margin: 5px;
+	}
+	.section
+	{
+		display: flex;
+		flex-direction: column;
+		width: 70%;
+		height: auto;
+	}
+	.article
+	{
+		display: flex;
+	}
+	
+	.ReclameAside
+	{
+		position: fixed;
+		right: 2%;
+		top: 40%;
+		background-color: #FFC72B;
+		width: 200px;
+		line-height: 1.4rem;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+	#ol-aside 
+	{
+		margin: 0;
+		padding: 20px;
+		font-size: 10px;
+	}
+}
+@media screen and (min-width: 720px) and (max-width: 929px)
+{
+	#video
+	{
+		width: 350px;
+		height: 270px;
+		margin: 5px;
+	}
+
+	#var
+	{
+		height: 170px;
+		width: 210px;
+		float: left;
+		margin: 5px;
+	}
+	#camera
+	{
+		height: 170px;
+		width: 210px;
+		float: left;
+		margin: 5px;
+	}
+	#vr
+	{
+		height: 170px;
+		width: 210px;
+		float: left;
+		margin: 5px;
+		
+	}
+	.section
+	{
+		display: flex;
+		flex-direction: column-reverse;
+		width: 70%;
+		height: auto;
+	}
+	.article
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	.ReclameAside
+	{
+		right: 2%;
+		top: 40%;
+		background-color: #FFC72B;
+		width: 290px;
+		line-height: 1.7rem;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+	#ol-aside 
+	{
+		margin: 0;
+		padding: 20px;
+		font-size: 15px;
+	}
+}
+@media screen and (max-width: 719px) 
+{
+	#video
+	{
+		display: none;
+	}
+	#var
+	{
+		height: 150px;
+		width: 190px;
+		margin-left: 20%; 
+	}
+	#camera
+	{
+		height: 150px;
+		width: 190px;
+		margin-left: 20%; 
+	}
+	#vr
+	{
+		height: 150px;
+		width: 190px;
+		margin-left: 20%; 
+		
+	}
+	#hamburgericon
+	{
+		display: block;
+		height: 80px;
+		width: 80px;
+		top: 0;
+		right: 0;
+		position: absolute;
+	}
+	.navigation 
+	{
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.navigationlist
+	{
+		list-style-type: none;
+		display: none;
+		position: relative;
+		right: 90px;
+		background-color: #AAA;
+		min-width: 200px;
+		min-height: 300px;
+		z-index: 1;
+	}
+	.navigation li 
+	{
+		text-align: center;
+		padding: 40px;
+
+	}
+	.navigation:hover .navigationlist
+	{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.section
+	{
+		display: flex;
+		flex-direction: column-reverse;
+		width: 70%;
+		height: auto;
+	}
+	.article
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.ReclameAside
+	{
+		margin-top: 5%;
+		right: 2%;
+		top: 40%;
+		background-color: #FFC72B;
+		width: 290px;
+		line-height: 1.7rem;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+	#ol-aside 
+	{
+		margin: 0;
+		padding: 20px;
+		font-size: 15px;
+	}
+}
+
+	
+	
+
+	
